@@ -7,8 +7,15 @@
     border-radius: 0px!important
 }
 
+
 a,p,span,h1,h2,h3,h4,h5,h6 {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
+}
+
+.bbCodeCode,
+.message-body{
+    font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
+    font-size: 12px;
 }
 
 body {
@@ -16,6 +23,8 @@ body {
     color: #FFFFFF;
     margin: 0;
     min-width: 360px;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 a:hover, a:active {
@@ -23,7 +32,10 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-.p-body-inner{max-width: 977px;}
+.p-body-inner {
+    padding: 0;
+    background: #f2f2f2;
+}
 
 .p-body-pageContent .block {
     margin-bottom: 15px;
@@ -114,9 +126,8 @@ a:hover, a:active {
 .p-breadcrumbs, .p-body-header, .p-body-main {
     display: flex;
     flex-direction: column;
-    max-width: 977px;
     margin: 0 auto;
-    background: #F2F2F2;
+    background: transparent;
     padding: 8px;
     width: 100%;
     table-layout: unset;
@@ -126,15 +137,21 @@ a:hover, a:active {
     background: transparent;
     padding: 12px 0;
     margin: 0;
+    display: flex;
 }
 
 .p-breadcrumbs {
     display: flex;
     flex-direction: initial;
+    padding: 12px;
 }
 
 .p-breadcrumbs li {
     float: inherit;
+}
+
+.p-breadcrumbs li a span {
+    color: #23497C;
 }
 
 .p-body-main--withSidebar .p-body-content {
@@ -147,7 +164,6 @@ a:hover, a:active {
 }
 
 .p-body-pageContent {
-    background: #F5F5FF;
 }
 
 .block-container {
@@ -225,6 +241,10 @@ span.avatar-u1127286-m {
 }
 
 aside.message-signature {
+    border-top: 1px solid #e2e4f2;
+    padding-top: 15px;
+    color: #000;
+    margin-top: 15px;
 }
 
 .avatar img {
@@ -326,19 +346,189 @@ header.message-attribution.message-attribution--split {
 
 .p-title-value {
     font-weight: bold;
-    font-size: 15px!important;
+    font-size: 20px!important;
+    color: #000;
 }
 
 .block-body .structItemContainer {
     margin-top: 15px;
 }
 
-.message .reactionsBar,
-.block-body .structItemContainer>.structItem:first-child, .reaction {
+.message .reactionsBar, .block-body .structItemContainer>.structItem:first-child, .reaction {
     display: none!important;
 }
 
+a.button.button--icon.button--icon--bolt, a.button--cta.button.button--icon.button--icon--write:before, a.button--cta.button.button--icon.button--icon--write .button-text, .node-body .node-extra span.label, .node-body .node-extra span.label-append, .block[data-widget-key="forum_overview_new_profile_posts"], .block[data-widget-key="forum_overview_new_posts"] {
+    display: none;
+}
+
+a.button--cta.button.button--icon.button--icon--write {
+    background: url(https://forums.voz.vn/images/buttons/newthread.gif) center no-repeat;
+    border: none;
+    width: 110px;
+    height: 26px;
+}
+
+.p-title-pageAction {
+    display: flex;
+}
+
+.p-body-header {
+    align-items: flex-start;
+    padding: 0 12px 0 10px;
+}
+
+.p-navSticky.p-navSticky--primary {
+    position: unset;
+}
+
+nav.p-nav {
+    margin: 0 auto;
+}
+
+.p-sectionLinks {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 5px;
+}
+
+a.p-navgroup-link {
+    background: transparent;
+}
+
+.p-navgroup {
+    margin-left: 0!important;
+}
+
+.p-nav-opposite {
+    margin-right: 0;
+}
+
+html#XF {
+    background: #201F25;
+}
+
+header#header {
+    background: transparent;
+    padding: 15px 0;
+}
+
+.p-pageWrapper {
+    background: transparent;
+}
+
+.pairs.pairs--justified>dd {
+    text-align: left;
+    float: left;
+}
+
+h3.block-minorHeader a {
+    font-weight: bold;
+}
+
+h3.block-minorHeader {
+    font-weight: bold;
+}
+
+a.actionBar-action.actionBar-action--reply {
+    background: url(https://forums.voz.vn/images/buttons/quote.gif) no-repeat center;
+    width: 75px;
+    height: 25px;
+    display: block;
+    font-size: 0px!important;
+}
+
+a.actionBar-action.actionBar-action--report {
+    background: url(https://forums.voz.vn/images/buttons/report.gif) no-repeat center;
+    font-size: 0px!important;
+    width: 22px;
+    height: 25px;
+}
+
+span.label-append, span.label {
+    display: none;
+}
+
+
+.block-outer {
+    background: transparent;
+}
+
+.message-cell.message-cell--main {
+    background: #f5f5ff;
+}
+
+.p-breadcrumbs>li:before {
+    color: #23497b;
+    content: "\f105";
+    padding-right: 6px;
+}
+.p-breadcrumbs>li:after,
+.p-breadcrumbs>li:first-child:before{
+    display: none
+}
+
+h4.menu-header {
+    color: #5c7099;
+    font-weight: bold;
+}
+
+a[data-xf-click="overlay"]:before {
+    display: none;
+}
+
+a[data-xf-click="overlay"] span{
+    color: #385183;
+}
+
+a.actionBar-action.actionBar-action--edit {
+    background: url(https://forums.voz.vn/images/buttons/edit.gif) center no-repeat;
+    font-size: 0px!important;
+    height: 25px;
+    width: 75px;
+}
+
+.message-actionBar.actionBar {margin-top: 15px;padding-top: 12px;border-top: 1px solid #e2e4f2;}
+
+.actionBar-set.actionBar-set--internal {
+    float: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+a.actionBar-action.actionBar-action--delete {
+    height: 22px;
+    margin-top: 3px;
+    display: block;
+    width: 75px;
+    background: #F44336;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px!important;
+    font-size: 12px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionBar-set.actionBar-set--external {
+    float: right;
+    margin: 0;
+}
+
+
+.shareButtons.shareButtons--iconic {
+    padding: 0 12px;
+}
+
+
 @media (max-width: 768px) {
+    .p-breadcrumbs>li{
+        display: inherit;
+    }
+
     .p-body-main {
         padding: 0;
         margin: 0;
@@ -354,16 +544,20 @@ header.message-attribution.message-attribution--split {
     }
 
     .p-body-pageContent .block-outer {
+        display: none;
         padding: 12px
     }
 
     .pageNavWrapper--mixed .pageNavSimple {
         display: inline-flex;
         width: 100%;
-    }
+    }p-body-pageContent
 
     nav.pageNavWrapper.pageNavWrapper--mixed {
         border-right: 1px solid #728fbf;
+    }
+    .p-body-header{
+        margin-bottom: 12px;
     }
 }
 
@@ -371,7 +565,7 @@ header.message-attribution.message-attribution--split {
     .p-body-sidebar {
         display: flex;
         flex-direction: column;
-        margin: unset;
+        margp-body-pageContentin: unset;
         margin-top: 15px;
     }
 
@@ -386,7 +580,8 @@ header.message-attribution.message-attribution--split {
         border-left: none;
         border-right: none;
     }
-    .p-body-sidebar:after{
+
+    .p-body-sidebar:after {
         display: none;
     }
 }
