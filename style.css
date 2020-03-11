@@ -167,3 +167,102 @@ li.pageNav-page.pageNav-page--current {
 a.pageNav-jump.pageNav-jump--next {
     background: #F5F5FF;
 }
+
+.block--messages .message {
+    background: transparent;
+    border: 1px solid #B0BDC6;
+}
+
+.message-cell.message-cell--user {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #E1E4F2;
+    border-bottom: 1px solid #fff;
+}
+
+.message-inner {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-cell.message-cell--user section {
+    display: flex;
+    align-items: center;
+}
+
+.message-cell.message-cell--user section .message-userArrow {
+    display: none;
+}
+
+.message-cell.message-cell--user section .message-userDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-cell.message-cell--user section .message-avatar {
+    margin-right: 8px;
+}
+
+.message-cell.message-cell--user section .message-avatar a span {
+    font-size: 35px!important;
+    font-weight: bold;
+}
+
+span.avatar-u1127286-m {
+}
+
+aside.message-signature {
+}
+
+.avatar img {
+    background: transparent;
+}
+
+.bbCodeBlock-title {
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+}
+
+.bbCodeBlock--expandable {
+    border-left: none;
+    border: 1px solid #d4d4d4;
+    background: #E1E4F2;
+}
+
+.bbCodeBlock-title:after {
+    font-weight: normal;
+}
+
+.bbCodeBlock-title a.bbCodeBlock-sourceJump:after {
+    font-weight: normal;
+}
+
+a.bbCodeBlock-sourceJump {
+    font-size: 12px!important;
+}
+
+.bbCodeBlock-content {
+    padding-top: 5px;
+}
+
+form.block.js-quickReply .message-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form.block.js-quickReply .message-inner .message-cell.message-cell--user {
+    display: none;
+}
+
+.message-userArrow {
+    display: none;
+}
+
+.bbCodeBlock-expandContent {
+    color: #000;
+    font-style: italic;
+}
