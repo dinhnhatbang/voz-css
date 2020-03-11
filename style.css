@@ -1,0 +1,169 @@
+/** Custom CSS By Ga9xVn - Make The Next VOZ Great Again **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px!important;
+    border-radius: 0px!important
+}
+
+a,p,span,h1,h2,h3,h4,h5,h6 {
+    font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
+}
+
+body {
+    background: #201F25;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+a:hover, a:active {
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+.p-body-pageContent .block {
+    margin-bottom: 0;
+}
+
+.block-header {
+    background: #869BBF url(https://forums.voz.vn/images/gradients/gradient_tcat.gif) repeat-x top left;
+    height: 30px;
+    font-weight: bold!important;
+    padding: inherit;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.block-header a {
+    color: #FFFFFF;
+}
+
+.node+.node {
+    border: none;
+}
+
+.node-body {
+    background: #F5F5FF;
+    height: 50px;
+}
+
+.node-body .node-main {
+    padding: 0;
+    padding-left: 10px;
+    border: 1px solid #fff;
+}
+
+.node-body .node-icon {
+    background: #E1E4F2 url(https://forums.voz.vn/images/statusicon/forum_new.gif) no-repeat center;
+    text-indent: -9999px;
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+.node-body .node-title {
+    font-weight: bold;
+}
+
+.node-body .node-stats>dl.pairs.pairs--rows:first-child {
+    border-right: 2px solid #fff;
+}
+
+.node-body .node-stats>dl.pairs.pairs--rows {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.node-body .node-stats {
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+.node-body .node-stats dt {
+    display: none;
+}
+
+.node-body .node-extra {
+    padding: 0;
+    padding-left: 10px;
+    background: #E1E4F2;
+    border: 1px solid #fff;
+}
+
+.node-body .node-extra span, .node-body .node-extra a {
+    font-weight: bold;
+    font-size: 12px!important;
+}
+
+.node-body .node-extra span {
+    font-weight: normal;
+    border: none;
+}
+
+.node-body .node-extra .node-extra-icon {
+    display: none;
+}
+
+.p-breadcrumbs, .p-body-header, .p-body-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    margin: auto;
+    background: #F2F2F2;
+    width: 977px;
+    padding: 8px;
+}
+
+.p-breadcrumbs, .p-body-header {
+    background: transparent;
+    padding: 12px 0;
+}
+
+.p-breadcrumbs {
+    display: flex;
+    flex-direction: initial;
+}
+
+.p-breadcrumbs li {
+    float: inherit;
+}
+
+.p-body-main--withSidebar .p-body-content {
+    padding: 0
+}
+
+.p-body-sidebar {
+    width: 100%;
+}
+
+.p-body-pageContent {
+    background: #F5F5FF;
+}
+
+.block-container {
+    background: transparent;
+    border: 1px solid #B0BDC6;
+}
+
+nav.pageNavWrapper.pageNavWrapper--mixed {
+    border: 1px solid #B0BDC6;
+}
+
+.pageNav-page {
+    border-right: 1px solid #B0BDC6!important;
+    background: #F5F5FF;
+}
+
+li.pageNav-page.pageNav-page--current {
+    background: #E1E4F2;
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+
+a.pageNav-jump.pageNav-jump--next {
+    background: #F5F5FF;
+}
