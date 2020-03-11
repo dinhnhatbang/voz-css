@@ -333,6 +333,7 @@ header.message-attribution.message-attribution--split {
     margin-top: 15px;
 }
 
+.message .reactionsBar,
 .block-body .structItemContainer>.structItem:first-child, .reaction {
     display: none!important;
 }
