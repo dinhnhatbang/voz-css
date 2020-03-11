@@ -7,13 +7,11 @@
     border-radius: 0px!important
 }
 
-
 a,p,span,h1,h2,h3,h4,h5,h6 {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
 }
 
-.bbCodeCode,
-.message-body{
+.bbCodeCode, .message-body {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
     font-size: 12px;
 }
@@ -163,8 +161,7 @@ a:hover, a:active {
     width: 100%;
 }
 
-.p-body-pageContent {
-}
+.p-body-pageContent .block-outer:first-child {display: none;}
 
 .block-container {
     background: transparent;
@@ -348,6 +345,7 @@ header.message-attribution.message-attribution--split {
     font-weight: bold;
     font-size: 20px!important;
     color: #000;
+    display: block;
 }
 
 .block-body .structItemContainer {
@@ -370,12 +368,12 @@ a.button--cta.button.button--icon.button--icon--write {
 }
 
 .p-title-pageAction {
-    display: flex;
+    margin: 0;
 }
 
 .p-body-header {
     align-items: flex-start;
-    padding: 0 12px 0 10px;
+    padding: 12px 12px 0 10px;
 }
 
 .p-navSticky.p-navSticky--primary {
@@ -449,7 +447,6 @@ span.label-append, span.label {
     display: none;
 }
 
-
 .block-outer {
     background: transparent;
 }
@@ -463,8 +460,8 @@ span.label-append, span.label {
     content: "\f105";
     padding-right: 6px;
 }
-.p-breadcrumbs>li:after,
-.p-breadcrumbs>li:first-child:before{
+
+.p-breadcrumbs>li:after, .p-breadcrumbs>li:first-child:before {
     display: none
 }
 
@@ -477,8 +474,10 @@ a[data-xf-click="overlay"]:before {
     display: none;
 }
 
-a[data-xf-click="overlay"] span{
-    color: #385183;
+a[data-xf-click="overlay"] span {
+    padding: 0 12px;
+    color: #fff;
+    background: #23497b;
 }
 
 a.actionBar-action.actionBar-action--edit {
@@ -488,7 +487,10 @@ a.actionBar-action.actionBar-action--edit {
     width: 75px;
 }
 
-.message-actionBar.actionBar {margin-top: 15px;padding-top: 12px;border-top: 1px solid #e2e4f2;}
+.message-actionBar.actionBar {
+    margin-top: 15px;
+    padding-top: 12px;
+}
 
 .actionBar-set.actionBar-set--internal {
     float: none;
@@ -518,14 +520,145 @@ a.actionBar-action.actionBar-action--delete {
     margin: 0;
 }
 
-
 .shareButtons.shareButtons--iconic {
     padding: 0 12px;
 }
 
+.structItem-cell.structItem-cell--icon {
+    vertical-align: middle;
+    padding-top: 16px;
+}
+
+.pageNavWrapper--mixed .pageNav {
+    display: flex;
+}
+
+.block-outer-main {
+    float: right;
+}
+
+.pageNavSimple {
+    display: none!important;
+}
+
+.pageNav-page {
+    display: block!important;
+}
+
+.block-outer.block-outer--after {
+}
+
+ul.pageNav-main {
+    display: flex;
+}
+
+.block-outer:first-child {
+    display: none;
+}
+
+div.block[data-type="thread"] .block-outer:first-child {
+    display: none;
+}
+
+.block-filterBar {
+    background: #5C7099 url(https://forums.voz.vn/images/gradients/gradient_thead.gif) repeat-x top left;
+}
+
+.block-filterBar a {
+    color: #fff;
+}
+
+ul.message-attribution-opposite.message-attribution-opposite--list .message-newIndicator {
+    display: none;
+}
+
+h3.menu-header {
+    color: #5c7099;
+    font-weight: bold;
+}
+
+.message-cell.message-cell--user {
+}
+
+.message-attribution-user .avatar {
+    display: flex;
+    margin-right: 5px;
+}
+
+li.message-attribution-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-attribution.message-attribution--plain ul.listInline.listInline--bullet {
+    display: flex;
+    align-items: center;
+}
+
+.message-cell.message-cell--main .message-actionBar.actionBar {
+}
+
+#profile-posts .message--simple .message-cell.message-cell--user {
+    display: none;
+}
+
+#profile-posts .block--messages .message {
+    padding-top: 0;
+}
+
+span.avatar.avatar--l.avatar--default.avatar--default--dynamic span {
+    font-size: 50px!important;
+}
+
+.p-title {
+    width: 100%;
+    display: flex;
+}
+
+a.p-navgroup-link.p-navgroup-link--textual.p-navgroup-link--logIn span {
+    background: transparent;
+}
+
+.overlay {
+    background: #e2e4f2;
+}
+
+footer#footer {
+    background: #3E5C92;
+    color: lightblue;
+    height: 200px;
+}
+
+.p-footer-linkList>li a {
+    color: lightblue;
+}
+
+.p-footer-copyright {
+    height: 150px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fr-wrapper.show-placeholder {
+    background: #ffffff!important;
+}
+
+.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic {
+    background: #E1E1E2!important;
+    font-weight: bold!important;
+}
 
 @media (max-width: 768px) {
-    .p-breadcrumbs>li{
+    .structItem-minor {
+        float: left;
+        padding: 4px;
+        height: 30px;
+    }
+
+    .p-breadcrumbs>li {
         display: inherit;
     }
 
@@ -544,20 +677,27 @@ a.actionBar-action.actionBar-action--delete {
     }
 
     .p-body-pageContent .block-outer {
-        display: none;
-        padding: 12px
+        display: block;
+        padding: 12px;
     }
 
     .pageNavWrapper--mixed .pageNavSimple {
         display: inline-flex;
         width: 100%;
-    }p-body-pageContent
-
-    nav.pageNavWrapper.pageNavWrapper--mixed {
-        border-right: 1px solid #728fbf;
     }
-    .p-body-header{
+
+    .p-body-header {
         margin-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    .structItem-cell.structItem-cell--meta {
+        display: none;
+    }
+
+    .structItem-cell.structItem-cell--latest {
+        padding: 1px;
+        margin: 0;
     }
 }
 
@@ -565,7 +705,7 @@ a.actionBar-action.actionBar-action--delete {
     .p-body-sidebar {
         display: flex;
         flex-direction: column;
-        margp-body-pageContentin: unset;
+        margin: unset;
         margin-top: 15px;
     }
 
