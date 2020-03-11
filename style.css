@@ -23,9 +23,10 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+.p-body-inner{max-width: 977px;}
+
 .p-body-pageContent .block {
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .block-header {
@@ -114,7 +115,7 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
     max-width: 977px;
-    margin: auto;
+    margin: 0 auto;
     background: #F2F2F2;
     padding: 8px;
     width: 100%;
@@ -124,6 +125,7 @@ a:hover, a:active {
 .p-breadcrumbs, .p-body-header {
     background: transparent;
     padding: 12px 0;
+    margin: 0;
 }
 
 .p-breadcrumbs {
@@ -324,6 +326,7 @@ header.message-attribution.message-attribution--split {
 
 .p-title-value {
     font-weight: bold;
+    font-size: 15px!important;
 }
 
 .block-body .structItemContainer {
@@ -337,6 +340,7 @@ header.message-attribution.message-attribution--split {
 @media (max-width: 768px) {
     .p-body-main {
         padding: 0;
+        margin: 0;
     }
 
     .node-body .node-extra {
@@ -380,5 +384,8 @@ header.message-attribution.message-attribution--split {
     .p-body-sidebar .block .block-container {
         border-left: none;
         border-right: none;
+    }
+    .p-body-sidebar:after{
+        display: none;
     }
 }
