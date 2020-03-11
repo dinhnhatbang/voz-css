@@ -15,6 +15,7 @@ body {
     background: #201F25;
     color: #FFFFFF;
     margin: 0;
+    min-width: 360px;
 }
 
 a:hover, a:active {
@@ -59,7 +60,8 @@ a:hover, a:active {
     background: #E1E4F2 url(https://forums.voz.vn/images/statusicon/forum_new.gif) no-repeat center;
     text-indent: -9999px;
     padding: 0;
-    border: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .node-body .node-title {
@@ -110,11 +112,12 @@ a:hover, a:active {
 .p-breadcrumbs, .p-body-header, .p-body-main {
     display: flex;
     flex-direction: column;
-    max-width: 1120px;
+    max-width: 977px;
     margin: auto;
     background: #F2F2F2;
-    width: 977px;
     padding: 8px;
+    width: 100%;
+    table-layout: unset;
 }
 
 .p-breadcrumbs, .p-body-header {
@@ -132,7 +135,8 @@ a:hover, a:active {
 }
 
 .p-body-main--withSidebar .p-body-content {
-    padding: 0
+    padding: 0;
+    width: 100%;
 }
 
 .p-body-sidebar {
@@ -146,10 +150,11 @@ a:hover, a:active {
 .block-container {
     background: transparent;
     border: 1px solid #B0BDC6;
+    margin: initial;
 }
 
 nav.pageNavWrapper.pageNavWrapper--mixed {
-    border: 1px solid #B0BDC6;
+    border: 1px solid #728fbf;
 }
 
 .pageNav-page {
@@ -169,6 +174,8 @@ a.pageNav-jump.pageNav-jump--next {
 }
 
 .block--messages .message {
+    padding-top: 30px;
+    position: relative;
     background: transparent;
     border: 1px solid #B0BDC6;
 }
@@ -224,6 +231,7 @@ aside.message-signature {
     color: #000;
     font-weight: bold;
     background: transparent;
+    padding-bottom: 6px;
 }
 
 .bbCodeBlock--expandable {
@@ -245,7 +253,7 @@ a.bbCodeBlock-sourceJump {
 }
 
 .bbCodeBlock-content {
-    padding-top: 5px;
+    padding-top: 6px;
 }
 
 form.block.js-quickReply .message-inner {
@@ -265,4 +273,92 @@ form.block.js-quickReply .message-inner .message-cell.message-cell--user {
 .bbCodeBlock-expandContent {
     color: #000;
     font-style: italic;
+}
+
+.bbCodeBlock {
+    border: 1px solid #eee;
+    color: #000;
+    font-style: italic;
+}
+
+header.message-attribution.message-attribution--split {
+    position: absolute;
+    top: 0;
+    background: #5C7099 url(https://forums.voz.vn/images/gradients/gradient_thead.gif) repeat-x top left;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+    height: 30px;
+    color: #fff;
+}
+
+.pageNavSimple-el.pageNavSimple-el--first {
+    border-right: 1px solid #728fbf;
+}
+
+.pageNavSimple-el.pageNavSimple-el--prev, .pageNavSimple-el.pageNavSimple-el--next {
+    color: #728fbf;
+    background: transparent;
+    border-right: 1px solid #728fbf;
+    margin-right: 0;
+}
+
+.pageNavSimple-el.pageNavSimple-el--current {
+    color: #738FBF;
+    margin: 0;
+    background: transparent;
+    border-color: #728fbf;
+    border-right: 1px solid #728fbf;
+}
+
+.p-title-value {
+    font-weight: bold;
+}
+
+.block-body .structItemContainer {
+    margin-top: 15px;
+}
+
+.block-body .structItemContainer>.structItem:first-child, .reaction {
+    display: none!important;
+}
+
+@media (max-width: 768px) {
+    .p-body-main {
+        padding: 0;
+    }
+
+    .node-body .node-extra {
+        display: none
+    }
+
+    .node-body .node-main {
+        border-bottom: none;
+        padding-top: 5px;
+    }
+
+    .p-body-pageContent .block-outer {
+        padding: 12px
+    }
+}
+
+@media (max-width: 992px) {
+    .p-body-sidebar {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        margin-top: 15px;
+    }
+
+    .p-body-sidebar .block {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        flex: unset;
+    }
+
+    .p-body-sidebar .block .block-container {
+        border-left: none;
+        border-right: none;
+    }
 }
