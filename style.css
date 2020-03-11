@@ -24,6 +24,7 @@ a:hover, a:active {
 }
 
 .p-body-pageContent .block {
+    margin-top: 15px;
     margin-bottom: 0;
 }
 
@@ -155,6 +156,7 @@ a:hover, a:active {
 
 nav.pageNavWrapper.pageNavWrapper--mixed {
     border: 1px solid #728fbf;
+    border-right: none;
 }
 
 .pageNav-page {
@@ -311,6 +313,15 @@ header.message-attribution.message-attribution--split {
     border-right: 1px solid #728fbf;
 }
 
+.pageNav-jump {
+    background: transparent;
+    border-right: 1px solid #728fbf;
+}
+
+.pageNavSimple-el {
+    width: 100%;
+}
+
 .p-title-value {
     font-weight: bold;
 }
@@ -339,6 +350,15 @@ header.message-attribution.message-attribution--split {
 
     .p-body-pageContent .block-outer {
         padding: 12px
+    }
+
+    .pageNavWrapper--mixed .pageNavSimple {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    nav.pageNavWrapper.pageNavWrapper--mixed {
+        border-right: 1px solid #728fbf;
     }
 }
 
