@@ -1,9 +1,8 @@
-/** Custom CSS By Ga9xVn - Make The Next VOZ Great Again **/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px!important;
+    font-size: 14.25px!important;
     border-radius: 0px!important
 }
 
@@ -13,7 +12,7 @@ a,p,span,h1,h2,h3,h4,h5,h6 {
 
 .bbCodeCode, .message-body {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
-    font-size: 12px;
+    font-size: 14.25px;
 }
 
 body {
@@ -35,8 +34,8 @@ a:hover, a:active {
     background: #f2f2f2;
 }
 
-.p-body-pageContent .block {
-    margin-bottom: 15px;
+.p-body-pageContent div[data-type="thread"] .block-container, .p-body-pageContent div[data-widget-definition="new_posts"] .block-container {
+    background: #f5f5ff;
 }
 
 .block-header {
@@ -161,7 +160,9 @@ a:hover, a:active {
     width: 100%;
 }
 
-.p-body-pageContent .block-outer:first-child {display: none;}
+.p-body-pageContent .block-outer:first-child {
+    display: none;
+}
 
 .block-container {
     background: transparent;
@@ -311,6 +312,13 @@ header.message-attribution.message-attribution--split {
     padding: 5px;
     height: 30px;
     color: #fff;
+    padding-right: 25px;
+}
+
+a.actionBar-action.actionBar-action--report {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .pageNavSimple-el.pageNavSimple-el--first {
@@ -333,7 +341,7 @@ header.message-attribution.message-attribution--split {
 }
 
 .pageNav-jump {
-    background: transparent;
+    background: #F5F5FF;
     border-right: 1px solid #728fbf;
 }
 
@@ -377,7 +385,7 @@ a.button--cta.button.button--icon.button--icon--write {
 }
 
 .p-navSticky.p-navSticky--primary {
-    position: unset;
+    position: unset!important;
 }
 
 nav.p-nav {
@@ -488,8 +496,8 @@ a.actionBar-action.actionBar-action--edit {
 }
 
 .message-actionBar.actionBar {
-    margin-top: 15px;
-    padding-top: 12px;
+    margin-top: 0;
+    padding-top: 6px;
 }
 
 .actionBar-set.actionBar-set--internal {
@@ -649,6 +657,14 @@ footer#footer {
 .fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic {
     background: #E1E1E2!important;
     font-weight: bold!important;
+}
+
+article.message-body.js-selectToQuote {
+    margin-top: 0;
+}
+
+div[data-type="profile_post"] .message-cell.message-cell--user, div[data-widget-key="whats_new_new_profile_posts"] .message-cell.message-cell--user {
+    display: none;
 }
 
 @media (max-width: 768px) {
