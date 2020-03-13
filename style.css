@@ -401,6 +401,12 @@ body[data-template="thread_view"] span.label-append, span.label {
 .label.label--red {
     background: #97485b;
 }
+.label.label--primary{
+    background: #7790b9;
+}
+.label.label--orange{
+    background: #a2673d;    
+}
 .block-outer {
     background: transparent;
 }
