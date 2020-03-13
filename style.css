@@ -139,9 +139,6 @@ div[data-type="thread"] .structItemContainer {
 .p-body-sidebar {
     width: 100%;
 }
-.p-body-pageContent .block-outer:first-child {
-    display: none;
-}
 .block-container {
     background: transparent;
     border: 1px solid #B0BDC6;
@@ -305,9 +302,6 @@ a.actionBar-action.actionBar-action--report {
 .block-body .structItemContainer {
     margin-top: 15px;
 }
-.message .reactionsBar, .block-body .structItemContainer>.structItem:first-child, .reaction {
-    display: none!important;
-}
 a.button.button--icon.button--icon--bolt, a.button--cta.button.button--icon.button--icon--write:before, a.button--cta.button.button--icon.button--icon--write .button-text, .node-body .node-extra span.label, .node-body .node-extra span.label-append, .block[data-widget-key="forum_overview_new_profile_posts"], .block[data-widget-key="forum_overview_new_posts"] {
     display: none;
 }
@@ -440,6 +434,7 @@ a.actionBar-action.actionBar-action--delete {
 .actionBar-set.actionBar-set--external {
     float: right;
     margin: 0;
+    display: flex;
 }
 .shareButtons.shareButtons--iconic {
     padding: 0 12px;
@@ -465,7 +460,10 @@ a.actionBar-action.actionBar-action--delete {
 ul.pageNav-main {
     display: flex;
 }
-.block-outer:first-child {
+.block-outer-main {
+    float: right;
+}
+.block-outer-opposite {
     display: none;
 }
 div.block[data-type="thread"] .block-outer:first-child {
