@@ -451,12 +451,9 @@ a.actionBar-action.actionBar-action--edit {
     align-items: center;
 }
 a.actionBar-action.actionBar-action--delete {
-    height: 20px;
-    margin-top: 3px;
-    display: block;
-    width: 75px;
-    background: #F44336;
-    color: #fff;
+    margin-top: 5px;
+    color: #F44336;
+    font-weight: bold;
     text-align: center;
     border-radius: 10px!important;
     font-size: 12px!important;
