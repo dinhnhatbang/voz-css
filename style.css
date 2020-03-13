@@ -401,11 +401,11 @@ body[data-template="thread_view"] span.label-append, span.label {
 .label.label--red {
     background: #97485b;
 }
-.label.label--primary{
+.label.label--primary {
     background: #7790b9;
 }
-.label.label--orange{
-    background: #a2673d;    
+.label.label--orange {
+    background: #a2673d;
 }
 .block-outer {
     background: transparent;
@@ -550,6 +550,20 @@ a.p-navgroup-link.p-navgroup-link--textual.p-navgroup-link--logIn span {
 }
 .overlay {
     background: #e2e4f2;
+}
+.overlay .overlay-content .message-inner {
+    flex-direction: row;
+    align-items: unset;
+}
+.overlay .overlay-content .message--multiQuoteList .message-content {
+    max-height: unset;
+}
+.overlay .overlay-content .message-gradient {
+    display:none;
+}
+.overlay .overlay-content .message-attribution {
+    color: #23497c;
+    border-bottom: none;
 }
 footer#footer {
     background: #3E5C92;
