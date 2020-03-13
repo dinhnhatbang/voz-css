@@ -34,6 +34,13 @@ a:hover, a:active {
 div[data-type="thread"] .structItemContainer {
     margin-top: 0;
 }
+.labelLink, .labelLink:hover {
+    text-decoration: none;
+    vertical-align: middle;
+}
+.structItem-cell.structItem-cell--latest {
+    vertical-align: middle;
+}
 .block-header {
     background: #869BBF url(https://forums.voz.vn/images/gradients/gradient_tcat.gif) repeat-x top left;
     height: 30px;
@@ -299,8 +306,7 @@ a.actionBar-action.actionBar-action--report {
     color: #000;
     display: block;
 }
-.block-body .structItemContainer {
-    margin-top: 15px;
+.p-title-value span.label-append, span.label {
 }
 a.button.button--icon.button--icon--bolt, a.button--cta.button.button--icon.button--icon--write:before, a.button--cta.button.button--icon.button--icon--write .button-text, .node-body .node-extra span.label, .node-body .node-extra span.label-append, .block[data-widget-key="forum_overview_new_profile_posts"], .block[data-widget-key="forum_overview_new_posts"] {
     display: none;
@@ -313,6 +319,9 @@ a.button--cta.button.button--icon.button--icon--write {
 }
 .p-title-pageAction {
     margin: 0;
+}
+body[data-template="thread_view"] .p-body-header {
+    padding-top: 0;
 }
 .p-body-header {
     align-items: flex-start;
@@ -371,8 +380,26 @@ a.actionBar-action.actionBar-action--report {
     width: 22px;
     height: 25px;
 }
+span.label-append {
+    display:none;
+}
 span.label-append, span.label {
-    display: none;
+    color: #f5f5ff!important;
+    border: none;
+    font-size: 11px!important;
+    padding: 3px 15px;
+    border-radius: 15px!important;
+    text-transform: capitalize;
+    margin-right: 5px;
+}
+body[data-template="thread_view"] span.label-append, span.label {
+    vertical-align: text-bottom;
+}
+.label.label--green {
+    background: #5a6f98;
+}
+.label.label--red {
+    background: #97485b;
 }
 .block-outer {
     background: transparent;
@@ -543,6 +570,9 @@ article.message-body.js-selectToQuote {
 }
 div[data-type="profile_post"] .message-cell.message-cell--user, div[data-widget-key="whats_new_new_profile_posts"] .message-cell.message-cell--user {
     display: none;
+}
+div[data-widget-definition="new_profile_posts"] .message-main.js-quickEditTarget {
+    position: relative;
 }
 @media(max-width: 768px) {
     .structItem-minor {
