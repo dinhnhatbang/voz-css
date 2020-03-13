@@ -594,6 +594,25 @@ div[data-type="profile_post"] .message-cell.message-cell--user, div[data-widget-
 div[data-widget-definition="new_profile_posts"] .message-main.js-quickEditTarget {
     position: relative;
 }
+a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote {
+    background: url(https://forums.voz.vn/images/buttons/multiquote_off.gif) no-repeat center;
+    font-size: 0!important;
+    width: 25px;
+    height: 28px;
+    border: none;
+}
+a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote.is-selected {
+    background: url(https://forums.voz.vn/images/buttons/multiquote_on.gif) no-repeat center;
+}
+.tooltip.tooltip--selectToQuote .tooltip-content span {
+    display: flex;
+    align-items: center;
+}
+.tooltip--selectToQuote a.actionBar-action.actionBar-action--reply, .tooltip--selectToQuote a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote {
+    background: none!important;
+    font-size: 14.25px!important;
+    width: unset;
+}
 @media(max-width: 768px) {
     .structItem-minor {
         float: left;
