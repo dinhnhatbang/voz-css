@@ -635,6 +635,16 @@ body[data-template="forum_view"] .structItem-title {
     background: url(https://forums.voz.vn/images/buttons/firstnew.gif) left no-repeat;
     padding-left: 17px;
 }
+body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.actionBar-action--reaction.reaction--imageHidden.reaction--1 {
+    background: url(https://2.pik.vn/20200d932185-8769-436e-a3f0-f53f408a59d4.png) center no-repeat;
+    width: 75px;
+    height: 27px;
+    margin-right: 5px;
+    background-size: 75px auto;
+}
+body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.actionBar-action--reaction.reaction--imageHidden.reaction--1 * {
+    display:none;
+}
 @media(max-width: 768px) {
     .structItem-minor {
         float: left;
