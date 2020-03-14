@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14.25px!important;
+    font-size: 14px!important;
     border-radius: 0px!important
 }
 a, p, span, h1, h2, h3, h4, h5, h6 {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
 }
-.bbCodeCode, .message-body {
+.bbCodeCode, .message-body, .message-signature {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
-    font-size: 14.25px;
+    font-size: 14px;
 }
 body {
     background: #201F25;
@@ -306,8 +306,6 @@ a.actionBar-action.actionBar-action--report {
     color: #000;
     display: block;
 }
-.p-title-value span.label-append, span.label {
-}
 a.button.button--icon.button--icon--bolt, a.button--cta.button.button--icon.button--icon--write:before, a.button--cta.button.button--icon.button--icon--write .button-text, .node-body .node-extra span.label, .node-body .node-extra span.label-append, .block[data-widget-key="forum_overview_new_profile_posts"], .block[data-widget-key="forum_overview_new_posts"] {
     display: none;
 }
@@ -383,14 +381,8 @@ a.actionBar-action.actionBar-action--report {
 span.label-append {
     display:none;
 }
-span.label-append, span.label {
-    color: #f5f5ff!important;
-    border: none;
-    font-size: 11px!important;
-    padding: 3px 15px;
-    border-radius: 15px!important;
-    text-transform: capitalize;
-    margin-right: 5px;
+span.label {
+    display: none;
 }
 body[data-template="thread_view"] span.label-append, span.label {
     vertical-align: text-bottom;
@@ -469,7 +461,7 @@ a.actionBar-action.actionBar-action--delete {
 .shareButtons.shareButtons--iconic {
     padding: 0 12px;
 }
-.structItem-cell.structItem-cell--icon {
+.structItem-cell.structItem-cell--meta, .structItem-cell.structItem-cell--icon {
     vertical-align: middle;
     padding-top: 16px;
 }
@@ -501,6 +493,10 @@ div.block[data-type="thread"] .block-outer:first-child {
 }
 .block-filterBar {
     background: #5C7099 url(https://forums.voz.vn/images/gradients/gradient_thead.gif) repeat-x top left;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .block-filterBar a {
     color: #fff;
@@ -607,8 +603,37 @@ a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote.is-selected {
 }
 .tooltip--selectToQuote a.actionBar-action.actionBar-action--reply, .tooltip--selectToQuote a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote {
     background: none!important;
-    font-size: 14.25px!important;
+    font-size: 14px!important;
     width: unset;
+}
+.structItem-iconContainer .structItem-secondaryIcon {
+    border:none;
+}
+body[data-template="forum_view"] .structItem-cell.structItem-cell--icon {
+    background: url(https://forums.voz.vn/images/statusicon/thread_hot_new.gif) center no-repeat;
+    width: 32px;
+}
+body[data-template="forum_view"] .structItem-cell.structItem-cell--icon.structItem-cell--iconEnd {
+    display: none;
+}
+body[data-template="forum_view"] .structItem-cell.structItem-cell--icon .avatar {
+    display: none;
+}
+body[data-template="forum_view"] .structItem-cell {
+    border: 1px solid #fff;
+    padding: 5px;
+    vertical-align: middle;
+}
+body[data-template="forum_view"] form.structItem {
+    display: none;
+}
+body[data-template="thread_view"] .block--messages time.u-dt {
+    background: url(https://forums.voz.vn/images/statusicon/post_old.gif) left no-repeat;
+    padding-left: 15px;
+}
+body[data-template="forum_view"] .structItem-title {
+    background: url(https://forums.voz.vn/images/buttons/firstnew.gif) left no-repeat;
+    padding-left: 17px;
 }
 @media(max-width: 768px) {
     .structItem-minor {
@@ -646,8 +671,29 @@ a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote.is-selected {
         display: none;
     }
     .structItem-cell.structItem-cell--latest {
-        padding: 1px;
+        padding: 0!important;
         margin: 0;
+    }
+    body[data-template="forum_view"] .structItem-cell.structItem-cell--icon {
+        display:none;
+    }
+    body[data-template="forum_view"] .structItem-cell {
+        border:none;
+        padding: 6px 12px;
+    }
+    body[data-template="forum_view"] .structItem-cell .structItem-minor {
+        padding: 0
+    }
+    body[data-template="forum_view"] .structItem-parts .structItem-startDate {
+        display:none;
+        color: #8f9193!important;
+    }
+    body[data-template="forum_view"] .structItem-title {
+        background: unset;
+        padding: 0;
+    }
+    body[data-template="forum_view"] .structItem-cell.structItem-cell--main {
+        padding-bottom: 0!important;
     }
 }
 @media(max-width: 992px) {
