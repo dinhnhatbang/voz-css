@@ -5,6 +5,10 @@
     font-size: 14px!important;
     border-radius: 0px!important
 }
+html {
+    background: #201F25;
+    width: 100%;
+}
 a, p, span, h1, h2, h3, h4, h5, h6 {
     font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif!important;
 }
@@ -15,10 +19,9 @@ a, p, span, h1, h2, h3, h4, h5, h6 {
 body {
     background: #201F25;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0 auto!important;
     min-width: 360px;
     max-width: 1120px;
-    margin: 0 auto;
 }
 a:hover, a:active {
     color: #FF6600;
@@ -156,7 +159,7 @@ nav.pageNavWrapper.pageNavWrapper--mixed {
     border-right: none;
 }
 .pageNav-page {
-    border-right: 1px solid #B0BDC6!important;
+    border-right: 1px solid #718fbf!important;
     background: #F5F5FF;
 }
 li.pageNav-page.pageNav-page--current {
@@ -217,6 +220,10 @@ aside.message-signature {
 .avatar img {
     background: transparent;
 }
+.bbCodeBlock {
+    border-left: 1px solid #B0BDC6!important;
+    border-top: 1px solid #B0BDC6!important;
+}
 .bbCodeBlock-title {
     color: #000;
     font-weight: bold;
@@ -226,7 +233,7 @@ aside.message-signature {
 .bbCodeBlock--expandable {
     border-left: none;
     border: 1px solid #d4d4d4;
-    background: #E1E4F2;
+    background: #e1e4f2;
 }
 .bbCodeBlock-title:after {
     font-weight: normal;
@@ -345,9 +352,6 @@ a.p-navgroup-link {
 .p-nav-opposite {
     margin-right: 0;
 }
-html#XF {
-    background: #201F25;
-}
 header#header {
     background: transparent;
     padding: 15px 0;
@@ -368,7 +372,7 @@ h3.block-minorHeader {
 a.actionBar-action.actionBar-action--reply {
     background: url(https://forums.voz.vn/images/buttons/quote.gif) no-repeat center;
     width: 75px;
-    height: 25px;
+    height: 30px;
     display: block;
     font-size: 0px!important;
 }
@@ -398,9 +402,6 @@ body[data-template="thread_view"] span.label-append, span.label {
 }
 .label.label--orange {
     background: #a2673d;
-}
-.block-outer {
-    background: transparent;
 }
 .message-cell.message-cell--main {
     background: #f5f5ff;
@@ -443,15 +444,12 @@ a.actionBar-action.actionBar-action--edit {
     align-items: center;
 }
 a.actionBar-action.actionBar-action--delete {
-    margin-top: 5px;
-    color: #F44336;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px!important;
-    font-size: 12px!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 1px;
+    background: url(https://2.pik.vn/2020d1388b2e-2dbf-4b0e-8e95-39dc54c7cc65.png) center no-repeat;
+    font-size: 0!important;
+    width: 70px;
+    height: 30px;
+    background-size: 70px;
 }
 .actionBar-set.actionBar-set--external {
     float: right;
@@ -468,9 +466,6 @@ a.actionBar-action.actionBar-action--delete {
 .pageNavWrapper--mixed .pageNav {
     display: flex;
 }
-.block-outer-main {
-    float: right;
-}
 .pageNavSimple {
     display: none!important;
 }
@@ -485,8 +480,21 @@ ul.pageNav-main {
 .block-outer-main {
     float: right;
 }
+.block-outer {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 .block-outer-opposite {
-    display: none;
+    margin-top: 0!important;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+.button.button--link, a.button.button--link {
+    background: #f5f5ff;
+    border-color: #718fbf!important
 }
 div.block[data-type="thread"] .block-outer:first-child {
     display: none;
@@ -645,6 +653,12 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
 body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.actionBar-action--reaction.reaction--imageHidden.reaction--1 * {
     display:none;
 }
+.block-outer:not(.block-outer--after) .pageNavWrapper:not(.pageNavWrapper--forceShow) {
+    display: block!important;
+}
+.block-outer.js-threadStatusField {
+    display: none!important;
+}
 @media(max-width: 768px) {
     .structItem-minor {
         float: left;
@@ -665,10 +679,6 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
         border-bottom: none;
         padding-top: 5px;
     }
-    .p-body-pageContent .block-outer {
-        display: block;
-        padding: 12px;
-    }
     .pageNavWrapper--mixed .pageNavSimple {
         display: inline-flex;
         width: 100%;
@@ -684,8 +694,11 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
         padding: 0!important;
         margin: 0;
     }
+    .block-outer {
+        padding: 0 6px 12px 6px;
+    }
     body[data-template="forum_view"] .structItem-cell.structItem-cell--icon {
-        display:none;
+        border-right: 1px solid #d4d5d7;
     }
     body[data-template="forum_view"] .structItem-cell {
         border:none;
@@ -697,10 +710,6 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
     body[data-template="forum_view"] .structItem-parts .structItem-startDate {
         display:none;
         color: #8f9193!important;
-    }
-    body[data-template="forum_view"] .structItem-title {
-        background: unset;
-        padding: 0;
     }
     body[data-template="forum_view"] .structItem-cell.structItem-cell--main {
         padding-bottom: 0!important;
