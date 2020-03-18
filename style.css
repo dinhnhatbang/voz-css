@@ -691,6 +691,9 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
 .block-outer.js-threadStatusField {
     display: none!important;
 }
+.lg-icon {
+    font-family:'Font Awesome 5 Pro'!important;
+}
 @media(max-width: 768px) {
     .structItem-minor {
         float: left;
