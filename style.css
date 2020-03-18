@@ -386,7 +386,33 @@ span.label-append {
     display:none;
 }
 span.label {
-    display: none;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 80%;
+    line-height: 1.35;
+    text-decoration: none;
+    color: #23497b!important;
+    border: none;
+    background: transparent!important;
+    text-transform: capitalize;
+    margin-right: 2px;
+}
+.is-unread span.label {
+    font-weight: bold!important;
+}
+span.label:after {
+    content:" - ";
+}
+body[data-template="thread_view"] span.label {
+    color: #000000!important;
+    font-weight: bold!important;
+    font-size: 18px!important;
+    margin-right: 5px;
+}
+.structItemContainer-group--sticky span.label {
+    color: #ff6601!important
 }
 body[data-template="thread_view"] span.label-append, span.label {
     vertical-align: text-bottom;
@@ -618,8 +644,14 @@ a.actionBar-action.actionBar-action--mq.u-jsOnly.js-multiQuote.is-selected {
     border:none;
 }
 body[data-template="forum_view"] .structItem-cell.structItem-cell--icon {
-    background: url(https://forums.voz.vn/images/statusicon/thread_hot_new.gif) center no-repeat;
+    background: url(https://forums.voz.vn/images/statusicon/thread_hot.gif) center no-repeat;
     width: 32px;
+}
+body[data-template="forum_view"] .is-unread .structItem-cell.structItem-cell--icon {
+    background: url(https://forums.voz.vn/images/statusicon/thread_hot_new.gif) center no-repeat;
+}
+body[data-template="forum_view"] .structItemContainer-group.structItemContainer-group--sticky .structItem-cell.structItem-cell--icon {
+    background: url(https://forums.voz.vn/images/statusicon/announcement_old.gif) center no-repeat;
 }
 body[data-template="forum_view"] .structItem-cell.structItem-cell--icon.structItem-cell--iconEnd {
     display: none;
@@ -695,7 +727,11 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
         margin: 0;
     }
     .block-outer {
-        padding: 0 6px 12px 6px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .block-outer-main {
+        padding-top: 12px
     }
     body[data-template="forum_view"] .structItem-cell.structItem-cell--icon {
         border-right: 1px solid #d4d5d7;
