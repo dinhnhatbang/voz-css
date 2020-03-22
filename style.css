@@ -687,6 +687,7 @@ body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.act
 }
 .block-outer:not(.block-outer--after) .pageNavWrapper:not(.pageNavWrapper--forceShow) {
     display: block!important;
+    position: static !important;
 }
 .block-outer.js-threadStatusField {
     display: none!important;
