@@ -671,8 +671,8 @@ body[data-template="thread_view"] .block--messages time.u-dt {
     background: url(https://forums.voz.vn/images/statusicon/post_old.gif) left no-repeat;
     padding-left: 15px;
 }
-body[data-template="forum_view"] .structItem-title {
-    background: url(https://forums.voz.vn/images/buttons/firstnew.gif) left no-repeat;
+body[data-template="forum_view"] .structItem-title a:first-child {
+    background: url(https://forums.voz.vn/images/buttons/firstnew.gif) left 2px no-repeat;
     padding-left: 17px;
 }
 body[data-template="thread_view"] .reaction.reaction--small.actionBar-action.actionBar-action--reaction.reaction--imageHidden.reaction--1 {
